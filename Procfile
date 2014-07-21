@@ -1,1 +1,1 @@
-web: gunicorn moonbeam:app --log-file=-
+web: bin/start-stunnel gunicorn moonbeam:app --log-file=-
