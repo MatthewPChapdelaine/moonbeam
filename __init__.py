@@ -5,7 +5,6 @@ Moonbeam (development main file)
 @email: appelsindrikken@gmail.com
 @date: July 2014
 """
-
 from moonbeam import app
 
 if __name__ == '__main__':
