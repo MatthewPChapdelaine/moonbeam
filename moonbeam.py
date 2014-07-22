@@ -4,6 +4,8 @@ from flask import Flask
 from data import Store
 from development import DEBUG
 
+import entities
+
 app = Flask(__name__, static_url_path='')
 app.debug = DEBUG
 
