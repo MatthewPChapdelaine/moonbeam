@@ -1,12 +1,15 @@
+syntax: glob
 *.pyc
 *.pyo
 *.db
 .DS_Store
 .coverage
 local_settings.py
-/static
 
 .env
 .idea
 venv
 private
+
+syntax: regexp
+^static/
