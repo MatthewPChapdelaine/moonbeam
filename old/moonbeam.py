@@ -1,7 +1,7 @@
 import os
 from flask import Flask
 
-from data import Store
+from store import Store
 from development import DEBUG
 
 import entities

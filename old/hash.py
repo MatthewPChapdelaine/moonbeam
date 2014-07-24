@@ -10,7 +10,9 @@ class Secret():
     def Hex(self):
         return str('0x%016x' % self.ToInt())
     def __str__(self):
-        return self.Hex()
-
+        return self.Value
+    def __repr__(self):
+        return self.Hed()
+    
 def Digest(password, salt):
     return hashlib.sha256(str(password) + str(salt)).hexdigest()
