@@ -246,10 +246,12 @@ INSTALLED_APPS = (
     "mezzanine.blog",
     "mezzanine.forms",
     "mezzanine.pages",
-    "mezzanine.galleries",
-    "mezzanine.twitter",
+    #"mezzanine.galleries",
+    #"mezzanine.twitter",
     #"mezzanine.accounts",
     #"mezzanine.mobile",
+    "metaverse",
+    "entries",
 )
 
 # List of processors used by RequestContext to populate the context.
@@ -341,7 +343,7 @@ OPTIONAL_APPS = (
 # ignored in your version control system allowing for settings to be
 # defined per machine.
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
 
